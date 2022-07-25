@@ -1,8 +1,7 @@
 module ABC
   def abc1
-    puts "abc1"
     display
-
+    puts "abc1"
   end
     def abc2
     puts "abc2"
