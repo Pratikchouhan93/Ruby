@@ -12,15 +12,22 @@ module Extra
   end
 end
 
-class MyClass
+class MyInstance
   include Second
-  extend Extra
-  def def
-    puts "def"
+ 
+  def def_my_class
+    puts "def_my_class"
+    method_second
+  end 
+end
+
+class MyClass
+   extend Extra
+    def def_mode
+    puts "def_mode"
     MyClass.method_extra
   end 
 end
 
-obj = MyClass.new
-obj.def
-# MyClass.method_extra
+MyInstance.new.def_my_class
+MyClass.method_extra
