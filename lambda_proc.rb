@@ -10,7 +10,6 @@
 # var[]
 # var.===
 
-
 def lambda_method
   var = lambda { return "lamnda continue the method." }
   var.call
@@ -22,7 +21,6 @@ def proc_method
   var.call
   "I am a Proc method print."
 end
-
 
 puts proc_method
 puts ""
